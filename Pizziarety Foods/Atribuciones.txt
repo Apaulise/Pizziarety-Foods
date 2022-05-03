@@ -1,0 +1,44 @@
+PizzaMain :
+ <a href="https://www.freepik.es/vectores/pizza-queso">Vector de pizza queso creado por catalyststuff - www.freepik.es</a>
+
+PizzaMuzza: 
+<a href="https://www.freepik.es/fotos/pizza-casera">Foto de pizza casera creado por Racool_studio - www.freepik.es</a>
+
+PizzaChampi:
+<a href="https://www.freepik.es/fotos/pizza-mozzarella">Foto de pizza mozzarella creado por timolina - www.freepik.es</a>
+
+
+IconoPizzaNav:
+<a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Freepik - Flaticon</a>
+
+FondoHeader: 
+<a href="https://www.freepik.es/fotos/restaurante">Foto de restaurante creado por rawpixel.com - www.freepik.es</a>
+
+IconoPizzaMain:
+ <a href="https://www.flaticon.com/free-icons/food-and-restaurant" title="food and restaurant icons">Food and restaurant icons created by Pixel perfect - Flaticon</a>
+
+
+FondoSeccion3: 
+<a href="https://www.freepik.es/vectores/navidad-ano-nuevo">Vector de navidad y año nuevo creado por nizovatina - www.freepik.es</a>
+
+
+IconoYT:
+<a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Freepik - Flaticon</a>
+
+IconoIG:
+<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Pixel perfect - Flaticon</a>
+
+IconoGmail:
+<a href="https://www.flaticon.com/free-icons/gmail" title="gmail icons">Gmail icons created by Freepik - Flaticon</a>
+
+IconoTW:
+<a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Freepik - Flaticon</a>
+
+IconoFB:
+<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>
+
+
+
+
+
+                      
