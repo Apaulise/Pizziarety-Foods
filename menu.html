@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:ital,wght@0,100;1,200;1,400;1,600&family=Blaka&family=Libre+Bodoni&display=swap');
+    </style>
+        <style>
+          .bg{
+            background-image: url("./Imagenes/Delivery.jpg");
+            background-position: center center;
+            background-size: cover;
+            
+          }
+          @media screen and (max-width:990px) {
+            .bg1{
+              background-image: url("./Imagenes/Delivery.jpg");
+              background-position: center center;
+             background-size: cover;
+            
+
+            }
+
+            
+          }
+          .ig{
+            color: purple;
+  }
+           
+        </style>
+         <link rel="shortcut icon" href="./Imagenes/pizza.png">
+</head>
+<link rel="stylesheet" href="estilos.css">
+<body>
+
+  
+    <header class="hidden">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark  ">
+          <div class="container-fluid">
+           
+            <a class="navbar-brand " href="index.html">
+              <img class="icono" src="./Imagenes/pizza.png" alt="Icono de pizza" width="80">
+            </a>
+            <div>
+              <a class=" ubicacion navbar-brand fs-3" href="#">Pizziarety Foods</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item fs-5 text-center""><a class="nav-link " href="index.html">INICIO</a></li>
+                <li class="nav-item fs-5 text-center""><a  class="nav-link active "href="#">MENÚ</a></li>
+                <li class="nav-item fs-5 text-center""><a class="nav-link" href="Contacto.html">CONTACTO</a></li>
+                <li class="nav-item fs-5 text-center"><a class=" btn-reserv nav-link text-bg-dark text-black fs-5  " href="Reservacion.html">RESERVAR</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="mb-5" id="hero2">
+        <div class="hero-container">
+          <div class="hero-logo">
+            <h1 class="fw-bold ubicacion">Menú</h1>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 50px; background-color: white; height: 5px" />
+          </div>
+          <h2 class="fw-bold">"¿Para qué enamorarte , si puedes pedír una pizza?"</h2>
+          <div class="actions">
+            <a href="#Menu1" class="btn-get-started bg-warning text-decoration-none">Ir al menú</a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="container-fluid">
+        <div class=" imgmenu">
+
+        </div>
+
+      </section>
+
+
+
+      <!-- <div class="row">
+        <div id="carouselExampleCaptions" class="carousel slide  " data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <img   src="./Imagenes/FondoMenu.jpg" class="d-block  w-100 " alt="...">
+              <div class="carousel-caption   d-md-block ftitulo">
+                <h5 class="fs-1 ubicacion">Menu</h5>
+                <p class="fs-3 ubicacion">Pedi , compra y te lo llevamos</p>
+              </div>
+              
+            </div>
+          </div>
+      </div> -->
+
+      
+      <div class="alert container position-sticky top-0 hide  alert-primary" role="alert">
+       Producto añadido al carrito!
+      </div>
+      <div class="alert container position-sticky remove  top-0   alert-danger" role="alert">
+        Producto removido con éxito
+      </div>
+      <main class="carrito ">
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr class="text-primary">
+                <th scope="col">#</th>
+                <th scope="col ">Productos</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody class="tbody" >
+        
+            </tbody>
+          </table>
+          
+          <br><br>
+          <div class="row mx-4">
+            <div class="col">
+                <h3 class="itemCartTotal"> Total: 0</h3>               
+            </div>
+            <div class="col d-flex justify-content-end">
+                <a href="#delivery"> <button class="btn btn-success" > Enviar pedido</button></a>
+  
+            </div>
+          </div>
+      </main>
+
+  
+
+
+      <section id="Menu1" class="bg-dark">
+        <h1 class="text-center ubicacion text-white pt-5  pb-5">NUESTRAS PIZZAS</h1>
+        <div class="container d-flex justify-content-center">
+            <div class=" row justify-content-center d-flex text-white flex-wrap pb-5 ubicacion">
+                <div class=" cardd col-6 col-sm-4  col-xl-2 mx-md-3   mx-xl-4 mx-3  ">
+                    <img src="./Imagenes/pizza muzza.jpg" class=" text-center  fpizzas card-img-top mt-4 cardmenu" alt="Pizza de muzzarela">
+                    <h1 class="fs-4 text-center card-title text-white pt-2">Margarita</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $900</p>
+                      <p class="pedi">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+                 
+                </div>
+                <div class="cardd col-6 col-sm-4  col-xl-2 mx-md-3   mx-xl-4  mx-3 ">
+                    <img src="./Imagenes/Pizza3.jpg" class=" fpizzas card-img-top mt-4 cardmenu" alt="Pizza Variety">
+                    <h1 class="fs-4 text-center card-title text-white pt-2" >Variety</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $1000</p>
+                      <p class="pedi">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+                  
+                </div>
+                <div class="cardd col-6 col-sm-4  col-xl-2 mx-md-3   mx-xl-4 mx-3 ">
+                    <img src="./Imagenes/Pizza champi.jpg" class=" fpizzas card-img-top mt-4 cardmenu" alt="Pizza de champigñones">
+                    <h1 class="fs-4 text-center card-title text-white pt-2">Champigñones</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $1000</p>
+                      <p class="pedi">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+                   
+                </div>
+                <div class="cardd col-6 col-sm-4  col-xl-2 mx-md-3  mx-xl-4 mx-3 ">
+                    <img src="./Imagenes/Pizza Salami.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Pizza de peperoni">
+                    <h1 class="fs-4 text-center card-title text-white pt-2" >Salami</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $900</p>
+                      <p class="pedi">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+          </div>
+      </section>
+      <section id="Menu2" class="pt-5">
+        <div class="container d-flex justify-content-center">
+          <div class="row justify-content-center row-cols-lg-3 row-cols-xl-4 d-flex text-white flex-wrap pb-5 ubicacion">
+              <div class="cardd col-6 col-sm-4  col-xl-2 mx-3  ">
+                  <img src="./Imagenes/pizza 4 quesos.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="pizza a los 4 quesos">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2">4 quesos</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-text fs-5 precio text-dark"> $800</p>
+                    <p class="fw-bold pedi text-dark">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                  </div>
+               
+              </div>
+              <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4 mx-3 ">
+                  <img src="./Imagenes/Napolitana.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Pizza a la napolitana">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2" >Napolitana</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-text fs-5 precio text-dark"> $850</p>
+                    <p class=" fw-bold pedi text-dark">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+              </div>
+                
+              </div>
+              <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4 mx-3 ">
+                  <img src="./Imagenes/Hawaiiana.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Pizza hawaiiana">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2">Hawaiana</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-text fs-5 precio text-dark"> $850</p>
+                    <p class=" fw-bold pedi text-dark">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                  </div>
+                 
+              </div>
+              <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4 mx-3 ">
+                  <img src="./Imagenes/Fugazzeta.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Pizza de Fugazzeta">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2" >Fugazzeta</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-text fs-5 precio text-dark"> $900</p>
+                    <p class="fw-bold pedi text-dark"">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section id="Menu1" class="bg-dark pt-5">
+        <h1 class="text-center ubicacion text-white pb-5">NUESTRAS EMPANADAS</h1>
+        <div class="container d-flex justify-content-center">
+            <div class="row justify-content-center d-flex text-white flex-wrap pb-5 ubicacion">
+                <div class="cardd col-6 col-smcol-6 col-sm-4 col-xl-2 mx-xl-4 mx-3  ">
+                    <img src="./Imagenes/Carne.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Empanada de carne">
+                    <h1 class="fs-4 text-center card-title text-white pt-2">Carne suave</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $110</p>
+                      <p class="pedi">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+                </div>
+                <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4 mx-3 ">
+                    <img src="./Imagenes/J&Q.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Empanada de Jamon y queso">
+                    <h1 class="fs-4 text-center card-title text-white pt-2" >Jamon & queso</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $110</p>
+                      <p class="pedi">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+                  
+                </div>
+                <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4 mx-3 ">
+                    <img src="./Imagenes/pollo.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Empanada de pollo">
+                    <h1 class="fs-4 text-center card-title text-white pt-2"> Pollo</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $110</p>
+                      <p class="pedi text-white">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+                   
+                </div>
+                <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4 mx-3 ">
+                    <img src="./Imagenes/QyC.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Empanada de queso y cebolla">
+                    <h1 class="fs-4 text-center card-title text-white pt-2" > Queso & cebolla</h1>
+                    <div class="card-body text-center">
+                      <p class="text-center card-text fs-5 precio text-white"> $110</p>
+                      <p class="pedi text-white"">PEDI AQUI</p>
+                      <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+          </div>
+      </section>
+      <section id="Menu2" class="pt-5">
+        <div class="container d-flex justify-content-center">
+          <div class="row justify-content-center d-flex text-white  mb-5 ubicacion">
+              <div class="cardd col-6 col-sm-4 card-title  col-xl-2 mx-xl-4  mx-3  ">
+                  <img src="./Imagenes/Calabaza.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Empanada de Calabaza">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2">Calabaza</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-t  ext fs-5 precio text-dark"> $110</p>
+                    <p class="fw-bold pedi text-dark">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                  </div>
+               
+              </div>
+              <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4   mx-3 ">
+                  <img src="./Imagenes/Humita.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Empanada de Humita">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2" >Humita</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-text fs-5 precio text-dark"> $110</p>
+                    <p class=" fw-bold pedi text-dark">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                  </div>
+                
+              </div>
+              <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4    mx-3 ">
+                  <img src="./Imagenes/acelga.jpg" class=" fpizzas card-img-top mt-4 cardmenu" alt="Empanada de acelga">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2">Acelga</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-text fs-5 precio text-dark"> $110</p>
+                    <p class=" fw-bold pedi text-dark">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                  </div>
+                 
+              </div>
+              <div class="cardd col-6 col-sm-4  col-xl-2 mx-xl-4  mx-3 ">
+                  <img src="./Imagenes/Caprese.jpg" class="fpizzas card-img-top mt-4 cardmenu" alt="Empanada de Caprese">
+                  <h1 class="fs-4 text-center card-title text-black fw-bold pt-2" >Caprese</h1>
+                  <div class="card-body text-center">
+                    <p class="text-center card-text fs-5 precio text-dark"> $500</p>
+                    <p class=" fw-bold pedi text-dark">PEDI AQUI</p>
+                    <button class="description  btn btn-primary button"> Añadir al carrito </button>
+                  </div>
+
+              </div>
+          </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="delivery">     
+        <div class="container mb-5  form_wrap">
+          <div class="row ">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded ">
+    
+            </div>
+            <div class="col p-5 rounded-end bg1">
+              <div class="text-end   contact_icon">
+                <span class="contact__logo fa fa-shipping-fast fa-beat-fade fa-solid mt-3" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075; --fa-animation-duration: 1.5s;"></span>
+              </div>
+              <h2 class="ubicacion fw-bold text-center py-5">Completá tus datos</h2>
+
+              <form  id="formulario" action="">
+                <div class="mb-4 d-flex flex-column  contact">
+                  <div class="form-control">
+                  <label  for="names">Nombres*</label>
+                  <input class="mb-4 " type="text" id="names">
+                  <p class="text-danger"></p>
+                </div>
+                
+                <div class="form-control">
+                  <label for="email" class="form-label">Correo electrónico *</label>
+                  <input type="email" id="email"  class=" mb-4  form-control">
+                  <p class="text-danger"></p>
+                </div>
+                <div class="form-control">
+                  <label for="mensaje">Domicilio / Altura *</label>
+                  <input class="mb-4 " name="" id="mensaje" ></input>
+                  <p class="text-danger"></p>
+                </div>
+                <div class="form-control">
+                  <label for="mensaje">Algun comentario adicional (opcional)</label>
+                  <textarea class="mb-4 "   ></textarea>
+                  <p class="text-danger"></p>
+                </div>
+
+
+                <div>
+                  <p class="ubicacion  fw-bold"><span class="ubicacion text-danger">Advertencia:</span>  <span>Los espacios que estan con un "*" son campos obligatorios</p></span>  
+                </div>
+      
+                <div class="d-flex align-self-end">
+                  <button class="btn-contact mx-3" >Enviar pedido</button>
+                 
+                </div>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
+
+            
+      <footer class=" bg-dark text-white">
+        <div class="container d-flex justify-content-center text-center">
+          <nav class="row ">
+            <div class="col pt-3 ">
+              <a  href="#"><img class="icono" src="./Imagenes/pizza.png" alt="Icono de pizza" width="120" ></a>
+            </div>
+            <div class="pt-3" >
+              <ul class="flex-sm-row item-footer fw-bold flex-column  d-flex justify-content-center text-center list-unstyled ">
+                <li class=" nav-item pt-3 fs-6 text-center"><a class="nav-link active" href="index.html">INICIO</a></li>
+                <li class="nav-item pt-3 fs-6 text-center"><a  class="nav-link"href="masinfo.html">VENTA MAYOR</a></li>
+                <li class="nav-item pt-3 fs-6 text-center"><a  class="nav-link "href="menu.html">MENÚ</a></li>
+                <li class="nav-item pt-3 fs-6 text-center"><a class="nav-link" href="Contacto.html">CONTACTO</a></li>
+              </ul>
+            </div>
+            <div class="mt-3 ">
+              <h4>Encontranos en:</h4>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 3px" />
+            </div>
+            <div class="pt-3 ">
+              <ul class=" fa-2x d-flex  justify-content-center text-center list-unstyled">
+                <li class="px-1 nav-item "><a target="_blank" href="https://www.instagram.com/pizziaretyfoods/"><i class="ig fa-beat fa-brands fa-instagram" style="--fa-beat-scale: 1.2;"></i></a></li>
+                <li class="px-1 nav-item"><a target="_blank" href="https://wa.me/+541151455506"><i class=" text-success fa-brands fa-whatsapp fa-beat" style= "--fa-beat-scale: 1.2;"> </i></a></li>
+                <li class="px-1 nav-item"><a target="_blank" href="https://www.facebook.com/profile.php?id=100082161925037"><i class="fa-brands fa-facebook-f fa-beat" style="--fa-beat-scale: 1.2;"></i></a></li>
+              </ul>
+            </div>
+      
+            <div class="mt-3 ">
+              <h4>Referencias tomadass:</h4>
+              <hr class="mb-2 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: white; height: 3px" />
+            </div>
+            <ul class="flex-sm-row item-footer fw-bold flex-column  d-flex justify-content-center text-center list-unstyled ">
+              <li class=" nav-item pt-3 fs-6 text-center"><a target="_blank" class="nav-link active" href="https://www.freepik.es/">FREEPIK</a></li>
+              <li class="nav-item pt-3 fs-6 text-center"><a  target="_blank" class="nav-link"href="https://fontawesome.com/">FONT AWESOME</a></li>
+              <li class="nav-item pt-3 fs-6 text-center"><a target="_blank"  class="nav-link "href="https://www.pexels.com/es-es/">PEXELS</a></li>
+            </ul>
+            <div>
+              <p class="fw-bold derechos"> © 2022 Todos los derechos reservados. <br>
+              Diseño y desarrollo: Agustin Paulise</p>
+            </div>
+        
+        
+          </nav>
+        </div>
+      </footer>
+
+
+<script src="validacion.js"></script>
+<script src="validacion.js"></script>
+          <!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a381c2aeac.js" crossorigin="anonymous"></script>
+    <script src="carrito.js"> </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
